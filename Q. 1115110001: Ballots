@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() 
+{	int a,b[100],c=0,d=0,e=0,f=0,g=0,h=0,x;
+ 	scanf("%d",&a);
+ 	for (x=0;x<a;x++)
+    {scanf("%d",&b[a]);
+     if (b[a]==1)
+     {c++;}
+     if (b[a]==2)
+     {d++;}
+     if (b[a]==3)
+     {e++;}
+     if (b[a]==4)
+     {f++;}
+     if (b[a]==5)
+     {g++;}
+     if (b[a]>5)
+     {h++;}
+    }
+ printf("Candidate 1=%d\nCandidate 2=%d\nCandidate 3=%d\nCandidate 4=%d\nCandidate 5=%d\nSpoil Ballot=%d",c,d,e,f,g,h);
+	
+	return 0;
+}

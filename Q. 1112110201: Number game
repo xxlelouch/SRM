@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() 
+{
+	int input[10],i,x,m,n;
+  	scanf("%d",&n);
+  	for (i=0;i<=n;i++)
+    { scanf("%d",&input[i]);}
+    
+    for (i=0;i<n;i++)
+    {
+      	for (x=2;x<input[i];x++)
+      	    {
+                if (input[i]%x==0)
+                    {   
+                        m=0;
+              	        break;
+                    }
+                else
+                    {m=1;}
+      	    }    
+  	 
+  	    if (m==1)
+            {printf("yes\n");}
+            else 
+            {printf("no\n");}
+    }
+
+return 0;  
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() 
+{	int a,b[100],x,c=0;
+ 	
+ 	scanf("%d",&a);
+ 	
+ 	for (x=0;x<a;x++)
+    
+    { scanf("%d",&b[x]);}
+ 	
+ 	for (x=0;x<a;x++)
+    { if (b[x]>c)
+      { c=b[x]; }
+    }
+    
+ printf("%d\n",c);
+  return 0;
+}
